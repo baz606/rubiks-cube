@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+bin/
+
+# CMake build directory
+cmake-build-debug/
+cmake-build-release/
+
+# CLion files
+.idea/
+
+# Compiled Object files
+*.o
+*.out
+
+# Executables
+*.exe
