@@ -2,8 +2,6 @@
 // Created by shehbaz on 5/10/2024.
 //
 
-#include "raylib.h"
-
 #include "Game.h"
 
 Game::Game(int screenWidth, int screenHeight, const char *title)

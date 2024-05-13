@@ -47,12 +47,22 @@ if (NOT raygui_FOUND) # If there's none, fetch raygui
 endif()
 
 
+# include header files directories
+include_directories(${CMAKE_SOURCE_DIR}/src)
+include_directories(${CMAKE_SOURCE_DIR}/src/actors)
+include_directories(${CMAKE_SOURCE_DIR}/src/actors/base)
+include_directories(${CMAKE_SOURCE_DIR}/src/components)
+include_directories(${CMAKE_SOURCE_DIR}/src/components/base)
 
 # Our Project
 
 add_executable(${PROJECT_NAME} src/main.cpp
         src/Game.h
-        src/Game.cpp)
+        src/Game.cpp
+        src/actors/base/Actor.cpp
+        src/actors/base/Actor.h
+        src/components/base/Component.cpp
+        src/components/base/Component.h)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
 

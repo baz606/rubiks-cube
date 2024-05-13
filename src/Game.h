@@ -5,16 +5,23 @@
 #ifndef RUBIKS_CUBE_GAME_H
 #define RUBIKS_CUBE_GAME_H
 
+#include "raylib.h"
 
 class Game
 {
 public:
+
+  enum GameState
+  {
+    PLAYING
+  };
+
   Game(int screenWidth, int screenHeight, const char* title);
 
   void Initialize();
   void RunGame();
   void Shutdown();
-  bool IsRunning() const;
+  [[nodiscard]] bool IsRunning() const;
 
   void ProcessInput();
   void UpdateGame();
