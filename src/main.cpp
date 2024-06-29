@@ -2,7 +2,7 @@
 
 int main()
 {
-  Game game(1280, 960, "Minesweeper");
+  Game game(1280, 960, "rubik's cube");
   game.Initialize();
 
   while (game.IsRunning())

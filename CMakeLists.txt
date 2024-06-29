@@ -62,7 +62,9 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/actors/base/Actor.cpp
         src/actors/base/Actor.h
         src/components/base/Component.cpp
-        src/components/base/Component.h)
+        src/components/base/Component.h
+        src/components/DrawComponent.cpp
+        src/components/DrawComponent.h)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
 
